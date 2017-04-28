@@ -27,6 +27,11 @@ public class ImageUploadServlet extends HttpServlet {
 		super.destroy();
 	}
 
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		this.doGet(request, response);
+	}
+	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
     	System.out.println("image upload work");
