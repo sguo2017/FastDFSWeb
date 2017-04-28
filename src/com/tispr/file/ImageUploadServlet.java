@@ -29,6 +29,7 @@ public class ImageUploadServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+    	System.out.println("image upload work");
 		String temp_path = "E:\\tmp";
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
