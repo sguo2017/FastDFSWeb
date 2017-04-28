@@ -22,7 +22,14 @@ public class FileConfigSetting {
 	
 	public static  String ATTACHMENT_MAX_SIZE = "";
 	
+
 	
+	public static String SMS_SEND_SWITCH = "off";
+	public static String SMS_SEND_URL = "";
+	public static String SMS_SEND_APPKEY = "";
+	public static String SMS_SEND_SECRET = "";
+	public static String SMS_SEND_FREE_SIGNNAME = "";
+	public static String SMS_SEND_TEMPLATE_CODE = "";
 	
 
 	static {
@@ -61,6 +68,13 @@ public class FileConfigSetting {
 		BDP_CONTEXTPATH = props.getProperty("bdp_contextpath");
 		BDP_SCHEMA = props.getProperty("bdp_schema");
 		BDP_HEAD_TOKEN = props.getProperty("bdp_head_token");
+		
+		SMS_SEND_SWITCH = props.getProperty("sms_send_switch");
+		SMS_SEND_URL = props.getProperty("sms_send_url");
+		SMS_SEND_APPKEY = props.getProperty("sms_send_appkey");
+		SMS_SEND_SECRET = props.getProperty("sms_send_secret");
+		SMS_SEND_FREE_SIGNNAME = props.getProperty("sms_send_free_signname");
+		SMS_SEND_TEMPLATE_CODE = props.getProperty("sms_send_template_code");
 	}
 	
 }
